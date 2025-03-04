@@ -1,7 +1,7 @@
 //segunda entrega agregar productos
 
 const container = document.getElementById("contenedor");
-console.log("Contenedor:", container); // Verificar que el contenedor se obtiene correctamente
+
 
 let productos = JSON.parse(localStorage.getItem("productos")) || [];
 
@@ -20,11 +20,11 @@ const borrarProducto = (nombre) => {
 };
 
 const formulario = document.getElementById("formulario");
-console.log("Formulario:", formulario); // Verificar que el formulario se obtiene correctamente
+console.log("Formulario:", formulario); 
 
 formulario.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log("Evento submit capturado"); // Verificar que el evento submit se captura
+    console.log("Evento submit capturado"); 
 
     const producto = e.target[0].value;
     const vigencia = e.target[1].value;
@@ -53,7 +53,7 @@ const crearcard = (producto) => {
     vigencia.innerText = producto.vigencia;
 
     const borrar = document.createElement("button");
-    borrar.className = "boton-borrar"; // Agregar clase CSS al botón
+    borrar.className = "boton-borrar"; 
     borrar.innerText = "Borrar producto";
     borrar.onclick = () => borrarProducto(producto.producto);
 
@@ -70,5 +70,5 @@ const verProductos = () => {
     });
 };
 
-// Inicializar la vista con los productos existentes
+
 verProductos();
