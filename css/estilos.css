@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    background-color: #c1e7e6;
+    font-size: 25px;
+}
+
+.titulo {
+    color: #043534;
+    text-align: center;
+    font-size: 50px;
+    margin: 30px 0;
+    letter-spacing: 10px;
+}
+
+.contenedor-calculadora {
+    background-color: white;
+    width: 750px;
+    margin: auto;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.titulo-cuenta {
+    display: block;
+    font-size: 0.75em;
+    margin-bottom: 8px;
+    color: #043534;
+
+}
+.cuenta-total {
+    background-color: #c1e7e6;
+    width: 100%;
+    height: 45px;
+    font-size: 1em;
+    text-align: right;
+    font-family: "Space Mono", monospace;
+    border-radius: 4px;
+    
+
+}
