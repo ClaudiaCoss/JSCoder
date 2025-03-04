@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
     <title>Segunda entrega</title>
 </head>
 
 <body>
     <h1>Agregar producto nuevo</h1>
 
-    <form id="formulario">
-        <input type="text" id="producto" placeholder="Ingresa el nombre del producto.">
-        <input type="date" id="vigencia" placeholder="Ingresa la vigencia del producto.">
-        <input type="button" value="Agregar" id="agregar">
+    <form class="formulario" id="formulario">
+        <input class="producto" type="text" id="producto" placeholder="Ingresa el nombre del producto.">
+        <input class="vigencia" type="date" id="vigencia" placeholder="Ingresa la vigencia del producto.">
+        <input class="btn-agregar" type="submit" value="Agregar" id="agregar">
     </form>
     <div id="contenedor" class="contenedor">
+        <input class="btnborrar" type="submit" value="borrar" id="borrar">
 
     </div>
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
